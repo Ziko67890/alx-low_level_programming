@@ -5,16 +5,19 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
+
 {
+	char low;
 
-	char alp[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+	for (low = 'a'; low <= 'z'; low++)
+	putchar(low);
 
-	for (i = 0; i < 26; i++)
-	{
-		putchar(alp[i]);
-	}
+	for (low = 'A'; low <= 'z'; low++)
+	putchar(low);
 	putchar('\n');
+
 	return (0);
+
 }
